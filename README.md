@@ -8,10 +8,6 @@ Do next step by step for start:
 
 * Rails version Rails 5.2.1
 
-* rake db:migrate || rails db:migrate
-
-* Database creation
-
-* Database initialization
+* rails server || rails s
 
 Good luck!
