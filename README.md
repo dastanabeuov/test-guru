@@ -1,13 +1,1 @@
-# README
-
-This Test-Guru app. Your can setup next tutorial.
-
-Do next step by step for start:
-
-* Ruby version ruby 2.5.1p57 (2018-03-29 revision 63029)
-
-* Rails version Rails 5.2.1
-
-* rails server || rails s
-
-Good luck!
+Приложения ТестГуру - это онлайн тестирование(где есть администратор который управляет всеми действиями над ПО как, редактирование, создание, и удаление вопросов и ответов теста). Затем пользователи которые проходят тест после регистрации.  
