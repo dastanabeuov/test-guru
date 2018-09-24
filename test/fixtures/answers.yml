@@ -2,10 +2,10 @@
 
 one:
   body: MyText
-  quastion_id: MyString
+  question_id: 1
   correct: false
 
 two:
   body: MyText
-  quastion_id: MyString
+  question_id: 1
   correct: false
