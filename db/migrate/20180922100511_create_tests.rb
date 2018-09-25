@@ -4,6 +4,7 @@ class CreateTests < ActiveRecord::Migration[5.2]
       t.string :title
       t.integer :level
       t.integer :category_id
+      t.references(:categories, index: true)
 
       t.timestamps
     end
