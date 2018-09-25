@@ -10,39 +10,39 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_25_085246) do
+ActiveRecord::Schema.define(version: 2018_09_25_090143) do
 
   create_table "answers", force: :cascade do |t|
-    t.text "body"
-    t.integer "question_id"
-    t.boolean "correct"
+    t.text "body", null: false
+    t.integer "question_id", null: false
+    t.boolean "correct", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "categories", force: :cascade do |t|
-    t.string "title"
+    t.string "title", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "questions", force: :cascade do |t|
-    t.text "body"
-    t.integer "test_id"
+    t.text "body", null: false
+    t.integer "test_id", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "tests", force: :cascade do |t|
-    t.string "title"
-    t.integer "level"
+    t.string "title", null: false
+    t.integer "level", default: 1, null: false
     t.integer "category_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.string "email"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false

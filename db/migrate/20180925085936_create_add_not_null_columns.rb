@@ -3,7 +3,7 @@ class CreateAddNotNullColumns < ActiveRecord::Migration[5.2]
     change_column_null :tests, :title, false
     change_column_null :tests, :level, false
 
-    change_column_null :users, :username, false
+    change_column_null :users, :name, false
 
     change_column_null :questions, :body, false
     change_column_null :questions, :test_id, false
