@@ -1,0 +1,2 @@
+class ChangeDefaultColumn < ApplicationRecord
+end
