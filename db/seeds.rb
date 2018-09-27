@@ -20,14 +20,18 @@ categories = Category.create!(
     ]
   )
 
-users = User.create!(name: 'admin', email: 'admin@example.org')
+users = User.create!(
+  [
+    { name: 'admin', email: 'admin@example.org' }
+  ]
+)
 
 tests = Test.create!(
   [
-    { title: 'Ruby', level: 3, category_id: categories[2].id, author_id: users[0].id },
-    { title: 'Ruby on Rails', level: 2, category_id: categories[2].id, author_id: users[0].id },
-    { title: 'HTML5', level: 2, category_id: categories[1].id, author_id: users[0].id },
-    { title: 'OS+nginx+passenger+sql+RoR+redis', level: 3, category_id: categories[3].id, author_id: users[0].id }
+    { title: 'Ruby', level: 3, category_id: categories[2].id, user_id: users[0].id },
+    { title: 'Ruby on Rails', level: 2, category_id: categories[2].id, user_id: users[0].id },
+    { title: 'HTML5', level: 2, category_id: categories[1].id, user_id: users[0].id },
+    { title: 'OS+nginx+passenger+sql+RoR+redis', level: 3, category_id: categories[3].id, user_id: users[0].id }
   ]
 
 )
