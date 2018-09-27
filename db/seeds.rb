@@ -43,13 +43,13 @@ questions = Question.create!(
 
 answers = Answer.create!(
   [
-    { body: 'Matz', correct: 1, question_id: questions[1].id },
-    { body: 'Ruby', correct: 1, question_id: questions[2].id },
-    { body: 'This method information write sample text on site', correct: 1, questions[3].id },
-    { body: 'Igor Sysoev', correct: 1, question_id: questions[4].id },
-    { body: 'David H.H', correct: 0, question_id: questions[1].id },
-    { body: 'JavaScript', correct: 0, question_id: questions[2].id },
-    { boy: 'Tis method from form authod write', correct: 0, question_id: questions[3].id },
-    { body: 'Alexander Shults', correct: 0, question_id: questions[4].id }
+    { body: 'Matz', correct: true, question_id: questions[1].id },
+    { body: 'Ruby', correct: true, question_id: questions[2].id },
+    { body: 'This method information write sample text on site', correct: true, questions[3].id },
+    { body: 'Igor Sysoev', correct: true, question_id: questions[4].id },
+    { body: 'David H.H', correct: false, question_id: questions[1].id },
+    { body: 'JavaScript', correct: false, question_id: questions[2].id },
+    { boy: 'Tis method from form authod write', correct: false, question_id: questions[3].id },
+    { body: 'Alexander Shults', correct: false, question_id: questions[4].id }
   ]
 )
