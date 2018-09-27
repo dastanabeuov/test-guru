@@ -1,9 +1,9 @@
 class Test < ApplicationRecord
 
-  def self.returns_sorted_in_descending_order(category)
-    Test.joins(join categories on categories.id = tests.category_id)
+  def self.titles_by_category(category)
+    Test.joins('join categories on categories.id = tests.category_id')
     .where(categories: { title: category })
-    .order(title: :DESC).pluck(tests.title)
+    .order('tests.title DESC').pluck('tests.title')
   end
 
 end

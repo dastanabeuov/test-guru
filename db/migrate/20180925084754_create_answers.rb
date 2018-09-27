@@ -4,7 +4,7 @@ class CreateAnswers < ActiveRecord::Migration[5.2]
       t.text :body
       t.boolean :correct
 
-      t.references :questions, foreign_key: true
+      t.references :question, foreign_key: true
       t.timestamps
     end
   end
