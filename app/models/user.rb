@@ -1,6 +1,6 @@
 class User < ApplicationRecord
 
-  def by_list_test(level)
+  def info_passing_test(level)
     Test.joins('join users on users.id = tests.user_id')
     .where(tests: { level: level }).order(title: :ASC)
   end
