@@ -1,0 +1,2 @@
+class TestCanTakeALotOfUser < ApplicationRecord
+end
