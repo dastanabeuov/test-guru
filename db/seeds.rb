@@ -29,10 +29,10 @@ categories = Category.create!(
 
 tests = Test.create!(
   [
-    { title: 'Ruby', level: 3, category_id: categories[2], user_id: User.first },
-    { title: 'Ruby on Rails', level: 2, category_id: categories[2], user_id: User.first },
-    { title: 'HTML5', level: 2, category_id: categories[1], user_id: User.first },
-    { title: 'OS+nginx+passenger+sql+RoR+redis', level: 3, category_id: categories[3], user_id: User.first  }
+    { title: 'Ruby', level: 3, category_id: categories[2] },
+    { title: 'Ruby on Rails', level: 2, category_id: categories[2] },
+    { title: 'HTML5', level: 2, category_id: categories[1] },
+    { title: 'OS+nginx+passenger+sql+RoR+redis', level: 3, category_id: categories[3] }
   ]
 
 )

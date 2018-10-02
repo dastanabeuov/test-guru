@@ -1,2 +1,0 @@
-class TestCanTakeALotOfUser < ApplicationRecord
-end

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_09_28_132618) do
+ActiveRecord::Schema.define(version: 2018_10_02_141956) do
 
   create_table "answers", force: :cascade do |t|
     t.text "body", null: false
@@ -36,8 +36,8 @@ ActiveRecord::Schema.define(version: 2018_09_28_132618) do
   end
 
   create_table "results", force: :cascade do |t|
-    t.integer "test_id"
     t.integer "user_id"
+    t.integer "test_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["test_id"], name: "index_results_on_test_id"
