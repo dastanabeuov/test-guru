@@ -5,6 +5,6 @@ class User < ApplicationRecord
 
   def info_passing_test(level)
     Test.joins(:results)
-    .where("results.user_id = #{ self.id } and tests.level = #{ level }")
+    .where(["results.user_id = ? AND tests.level = ?", self.id, level])
   end
 end

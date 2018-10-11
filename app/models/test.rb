@@ -9,7 +9,7 @@ class Test < ApplicationRecord
 
   def self.titles_by_category(category)
     Test.joins(:category)
-    .where(categories: { title: category })
+    .where(category: category)
     .order(title: :desc).pluck(:title)
   end
 
