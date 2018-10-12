@@ -1,8 +1,8 @@
 class User < ApplicationRecord
   has_many :results
   has_many :tests, through: :results
-  validates :name, :email, presence: {
-    message: "Наличие атрибутов title, body, email в соответствующих моделях" }
+
+  validates :name, :email, presence: true
 
   def info_passing_test(level)
     Test.joins(:results)
