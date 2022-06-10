@@ -1,6 +1,8 @@
-**Test Guru**
+**Test Guru First**
 
 **Hi 👋**
+
+Part 1 (Do not forget see second part https://github.com/dastanabeuov/TestSecond)
 
 This web application for quizzes and tests.
 Online testing.
